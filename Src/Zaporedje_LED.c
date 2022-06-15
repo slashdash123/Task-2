@@ -15,13 +15,13 @@ uint32_t zaporedje_LED (uint32_t a)
 	{
 			// vse ugasnjene - inverzna logika
 			case 0:
-				*fODR |= (1 << 0); 				// PF0= a
-				*fODR |= (1 << 1); 				// PF1= b
-				*fODR |= (1 << 2); 				// PF2= c
-				*fODR |= (1 << 3); 				// PF3= d
-				*fODR |= (1 << 4); 				// PF4= e
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 0); 			// PF0= a
+				*fODR |= (1 << 1); 			// PF1= b
+				*fODR |= (1 << 2); 			// PF2= c
+				*fODR |= (1 << 3); 			// PF3= d
+				*fODR |= (1 << 4); 			// PF4= e
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			// vklop a
@@ -31,8 +31,8 @@ uint32_t zaporedje_LED (uint32_t a)
 
 			// vklop ab
 			case 2:
-				*fODR &= ~(1 << 0);				// PF0= a
-				*fODR &= ~(1 << 1);				// PF1= b
+				*fODR &= ~(1 << 0);			// PF0= a
+				*fODR &= ~(1 << 1);			// PF1= b
 				break;
 
 			// vklop abc
@@ -82,58 +82,58 @@ uint32_t zaporedje_LED (uint32_t a)
 
 			// vklop abcdef
 			case 8:
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			// vklop abcde
 			case 9:
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			// vklop abcd
 			case 10:
-				*fODR |= (1 << 4); 				// PF4= e
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 4); 			// PF4= e
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			// vklop abc
 			case 11:
-				*fODR |= (1 << 3); 				// PF3= d
-				*fODR |= (1 << 4); 				// PF4= e
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 3); 			// PF3= d
+				*fODR |= (1 << 4); 			// PF4= e
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			//vklop ab
 			case 12:
-				*fODR |= (1 << 2); 				// PF2= c
-				*fODR |= (1 << 3); 				// PF3= d
-				*fODR |= (1 << 4); 				// PF4= e
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 2); 			// PF2= c
+				*fODR |= (1 << 3); 			// PF3= d
+				*fODR |= (1 << 4); 			// PF4= e
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			// vklop a
 			case 13:
-				*fODR |= (1 << 1); 				// PF1= b
-				*fODR |= (1 << 2); 				// PF2= c
-				*fODR |= (1 << 3); 				// PF3= d
-				*fODR |= (1 << 4); 				// PF4= e
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 1); 			// PF1= b
+				*fODR |= (1 << 2); 			// PF2= c
+				*fODR |= (1 << 3); 			// PF3= d
+				*fODR |= (1 << 4); 			// PF4= e
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
 			// vklop a
 			case 14:
-				*fODR |= (1 << 0); 				// PF6= a
-				*fODR |= (1 << 1); 				// PF1= b
-				*fODR |= (1 << 2); 				// PF2= c
-				*fODR |= (1 << 3); 				// PF3= d
-				*fODR |= (1 << 4); 				// PF4= e
-				*fODR |= (1 << 5); 				// PF5= f
-				*fODR |= (1 << 6); 				// PF6= g
+				*fODR |= (1 << 0); 			// PF6= a
+				*fODR |= (1 << 1); 			// PF1= b
+				*fODR |= (1 << 2); 			// PF2= c
+				*fODR |= (1 << 3); 			// PF3= d
+				*fODR |= (1 << 4); 			// PF4= e
+				*fODR |= (1 << 5); 			// PF5= f
+				*fODR |= (1 << 6); 			// PF6= g
 				break;
 		}
 }
