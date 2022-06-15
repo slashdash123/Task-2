@@ -26,5 +26,4 @@
 #define GPIOF_MODER									(GPIOF_BASE + 0x00)			// povemo kje ma GPIOF mode register
 #define GPIOF_ODR										(GPIOF_BASE + 0x14)			// definiramo kje je output data register na portu F
 
-
 #endif /* MEMORY_MAP_H_ */
