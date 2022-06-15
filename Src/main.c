@@ -30,8 +30,8 @@ int main(void)
 		//2. Nastavimo pin PG13 na izhod
 		uint32_t* gMODER = (uint32_t*)GPIOG_MODER;
 		//postavimo PG13 na izhod, zelena led
-		*gMODER |= 1 << 26;												//postavi 26 bit
-		*gMODER &= ~(1 << 27);											//pocisti 27 bit
+		*gMODER |= 1 << 26;							//postavi 26 bit
+		*gMODER &= ~(1 << 27);							//pocisti 27 bit
 
 		//3. Vklop oziroma izklop LED diode, zelena, indikator če je tipka pritisnjena
 		uint32_t* gODR = (uint32_t*)GPIOG_ODR;
@@ -91,7 +91,7 @@ int main(void)
 			if(jeGumbPritisnjen != 0 && prej==0)
 			{
 				//preverimo, ce je gumb pritisnjen, zelena led sveti dokler je gumb pritisnjen
-				*gODR |= 1 << 13;							//vklopi LED diodo
+				*gODR |= 1 << 13;			//vklopi LED diodo
 				if (a < 15)
 				{
 				a++;
@@ -103,7 +103,7 @@ int main(void)
 			}
 			else
 			{
-				*gODR &= ~(1 << 13);						//izklopi LED diodo, če gumb ni pritisnjen
+				*gODR &= ~(1 << 13);			//izklopi LED diodo, če gumb ni pritisnjen
 			}
 
 			prej = jeGumbPritisnjen;
