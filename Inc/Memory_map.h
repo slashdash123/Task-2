@@ -8,11 +8,11 @@
 #ifndef MEMORY_MAP_H_
 #define MEMORY_MAP_H_
 
-#define RCC_BASE										    0x40023800
-#define RCC_AHB1ENR									    (RCC_BASE + 0x30)
-#define RCC_AHB1ENR_GPIOGEN					    (1 << 6)
-#define RCC_AHB1ENR_GPIOAEN					    (1 << 0)
-#define RCC_AHB1ENR_GPIOFEN					    (1 << 5)
+#define RCC_BASE				0x40023800
+#define RCC_AHB1ENR				(RCC_BASE + 0x30)
+#define RCC_AHB1ENR_GPIOGEN			(1 << 6)
+#define RCC_AHB1ENR_GPIOAEN			(1 << 0)
+#define RCC_AHB1ENR_GPIOFEN			(1 << 5)
 
 #define GPIOA_BASE									    0x40020000							// za gumb
 #define GPIOA_MODER									    (GPIOA_BASE + 0x00)			// z MODER nastavimo kaj bo naš GPIO (input/output...)
