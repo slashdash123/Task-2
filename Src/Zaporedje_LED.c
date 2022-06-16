@@ -80,25 +80,25 @@ uint32_t zaporedje_LED (uint32_t a)
 				*fODR &= ~(1 << 6); 			// PF6= g
 				break;
 
-			// vklop abcdef
+			// izklop g
 			case 8:
 				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
-			// vklop abcde
+			// izklop fg
 			case 9:
 				*fODR |= (1 << 5); 			// PF5= f
 				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
-			// vklop abcd
+			// izklop efg
 			case 10:
 				*fODR |= (1 << 4); 			// PF4= e
 				*fODR |= (1 << 5); 			// PF5= f
 				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
-			// vklop abc
+			// izklop defg
 			case 11:
 				*fODR |= (1 << 3); 			// PF3= d
 				*fODR |= (1 << 4); 			// PF4= e
@@ -106,7 +106,7 @@ uint32_t zaporedje_LED (uint32_t a)
 				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
-			//vklop ab
+			// izklop cdefg
 			case 12:
 				*fODR |= (1 << 2); 			// PF2= c
 				*fODR |= (1 << 3); 			// PF3= d
@@ -115,7 +115,7 @@ uint32_t zaporedje_LED (uint32_t a)
 				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
-			// vklop a
+			// izklop bcdefg
 			case 13:
 				*fODR |= (1 << 1); 			// PF1= b
 				*fODR |= (1 << 2); 			// PF2= c
@@ -125,7 +125,7 @@ uint32_t zaporedje_LED (uint32_t a)
 				*fODR |= (1 << 6); 			// PF6= g
 				break;
 
-			// vklop a
+			// izklop abcdefg - vse ugasnjene
 			case 14:
 				*fODR |= (1 << 0); 			// PF6= a
 				*fODR |= (1 << 1); 			// PF1= b
